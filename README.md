@@ -1,4 +1,8 @@
-# Motivation
+# Tech radar was copied and adapted from Zalando
+
+Note: this Readme is a copy from Zalando and needs to be updated!
+
+## Motivation
 
 At [Zalando](http://zalando.de), we maintain a [public Tech
 Radar](http://zalando.github.io/tech-radar/) to help our engineering teams

@@ -1,0 +1,51 @@
+name,ring,quadrant,moved
+FastAPI,ADOPT,Frameworks,up
+Readthedocs,TRIAL,Frameworks,up
+Sphinx,TRIAL,Frameworks,up
+jest,ADOPT,Frameworks,none
+React.js,ADOPT,Frameworks,none
+AWS,ADOPT,Infrastructure,none
+Kubeflow,TRIAL,Infrastructure,up
+Python3,ADOPT,Languages,none
+Javascript,ADOPT,Languages,none
+CSS,ADOPT,Languages,none
+Django,ADOPT,Frameworks,none
+Elasticsearch,ADOPT,Data Management,none
+Postgres,ADOPT,Data Management,none
+Kafka,ADOPT,Data Management,none
+AWS S3,ADOPT,Data Management,none
+Spinnaker,ADOPT,Infrastructure,none
+Jenkins,ADOPT,Infrastructure,none
+Docker,ADOPT,Infrastructure,none
+Kubernetes,ADOPT,Infrastructure,none
+Rancher,ADOPT,Infrastructure,none
+Go,ASSESS,Languages,up
+RabbitMQ,ADOPT,Data Management,none
+Ant Design,TRIAL,Frameworks,up
+TypeScript,TRIAL,Languages,up
+Quart,TRIAL,Frameworks,none
+create-react-app,ADOPT,Frameworks,none
+Redis,ADOPT,Data Management,none
+Vault,TRIAL,Data Management,up
+Terraform,ADOPT,Infrastructure,none
+SaltStack,ADOPT,Infrastructure,none
+Ansible,ASSESS,Infrastructure,none
+Logstash,TRIAL,Infrastructure,none
+Filebeats,TRIAL,Infrastructure,none
+Kibana,TRIAL,Infrastructure,none
+Elasticsearch APM,TRIAL,Infrastructure,none
+Sentry,ADOPT,Infrastructure,none
+PagerDuty,ADOPT,Infrastructure,none
+Prometheus,ADOPT,Infrastructure,none
+Grafana,ADOPT,Infrastructure,none
+AWS EC2,ADOPT,Infrastructure,none
+AWS EMR,ADOPT,Infrastructure,none
+AWS ALB,ADOPT,Infrastructure,none
+AWS WAF,TRIAL,Infrastructure,none
+AWS Lambda,ADOPT,Infrastructure,none
+Nginx,ADOPT,Infrastructure,none
+Uwsgi,ADOPT,Frameworks,none
+Consul,ADOPT,Infrastructure,none
+Github,ADOPT,Infrastructure,none
+Github Actions,ADOPT,Infrastructure,none
+Websockets,ADOPT,Frameworks,none

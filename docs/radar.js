@@ -276,14 +276,6 @@ function radar_visualization(config) {
       .style("font-family", "Arial, Helvetica")
       .style("font-size", "34");
 
-    // footer
-    radar.append("text")
-      .attr("transform", translate(footer_offset.x, footer_offset.y))
-      .text("▲ moved up     ▼ moved down")
-      .attr("xml:space", "preserve")
-      .style("font-family", "Arial, Helvetica")
-      .style("font-size", "10");
-
     // legend
     var legend = radar.append("g");
     for (var quadrant = 0; quadrant < 4; quadrant++) {
@@ -441,4 +433,46 @@ function radar_visualization(config) {
     .velocityDecay(0.19) // magic number (found by experimentation)
     .force("collision", d3.forceCollide().radius(12).strength(0.85))
     .on("tick", ticked);
+}
+
+function toEntry(row) {
+  return {
+    label: row.name,
+    quadrant: ['Languages','Infrastructure','Frameworks','Data Management'].indexOf(row.quadrant),
+    ring: ['ADOPT','TRIAL','ASSESS','HOLD'].indexOf(row.ring),
+    link: row.link,
+    moved: ['down','none','up'].indexOf(row.moved) -1,
+    active:true
+  }
+}
+
+function draw_radar(my_entries) {
+  radar_visualization({
+  svg_id: "radar",
+  width: 1450,
+  height: 1000,
+  colors: {
+    background: "#fff",
+    grid: "#bbb",
+    inactive: "#ddd"
+  },
+  title: "Scoutbee Tech Radar — 2020.09",
+  quadrants: [
+    { name: "Languages" },
+    { name: "Infrastructure" },
+    { name: "Frameworks" },
+    { name: "Data Management" }
+  ],
+  rings: [
+    { name: "ADOPT", color: "#93c47d" },
+    { name: "TRIAL", color: "#93d2c2" },
+    { name: "ASSESS", color: "#fbdb84" },
+    { name: "HOLD", color: "#efafa9" }
+  ],
+  print_layout: true,
+  // zoomed_quadrant: 0,
+  //ENTRIES
+  entries: my_entries
+  //ENTRIES
+});
 }
